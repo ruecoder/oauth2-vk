@@ -16,7 +16,6 @@
         "authentication",
         "vk"
     ],
-    "minimum-stability": "stable",
     "require": {
         "php": ">=7.3",
         "league/oauth2-client": "^2.0"
@@ -29,11 +28,6 @@
     "autoload": {
         "psr-4": {
             "League\\OAuth2\\Client\\": "src/"
-        }
-    },
-    "autoload-dev": {
-        "psr-4": {
-            "League\\OAuth2\\Client\\Test\\": "test/src/"
         }
     },
     "scripts": {
