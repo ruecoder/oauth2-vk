@@ -10,7 +10,7 @@ class VKUser implements ResourceOwnerInterface
 
     public function __construct(array $response)
     {
-        $this->response = $response;
+        $this->response = $response['response'];
     }
 
     public function getId()
