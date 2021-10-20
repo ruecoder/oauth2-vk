@@ -15,7 +15,7 @@ class VK extends AbstractProvider
 
     protected $version = '5.131';
     protected $lang = null;
-    protected $fields = ['id'];
+    protected $fields = ['id', 'nickname'];
 
     public function getBaseAuthorizationUrl(): string
     {
