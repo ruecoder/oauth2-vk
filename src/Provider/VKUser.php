@@ -38,6 +38,11 @@ class VKUser implements ResourceOwnerInterface
         return $this->response['nickname'];
     }
 
+    public function getAvatar(): ?string
+    {
+        return $this->response['photo_200_orig'];
+    }
+
     public function toArray(): array
     {
         return $this->response;
