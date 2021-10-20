@@ -1,6 +1,6 @@
 <?php
 
-namespace ruecoder\OAuth2\Client\Provider;
+namespace Ruecoder\OAuth2\Client\Provider;
 
 use League\OAuth2\Client\Provider\ResourceOwnerInterface;
 
