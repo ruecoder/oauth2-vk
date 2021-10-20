@@ -9,7 +9,7 @@ use League\OAuth2\Client\Token\AccessToken;
 use League\OAuth2\Client\Tool\BearerAuthorizationTrait;
 use Psr\Http\Message\ResponseInterface;
 
-class Vk extends AbstractProvider
+class VK extends AbstractProvider
 {
     use BearerAuthorizationTrait;
 
@@ -55,6 +55,6 @@ class Vk extends AbstractProvider
 
     protected function createResourceOwner(array $response, AccessToken $token): ResourceOwnerInterface
     {
-        return new VkUser($response);
+        return new VKUser($response);
     }
 }
