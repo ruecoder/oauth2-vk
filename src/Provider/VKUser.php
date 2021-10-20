@@ -23,6 +23,16 @@ class VKUser implements ResourceOwnerInterface
         return $this->response['email'] || null;
     }
 
+    public function getFirstName(): ?string
+    {
+        return $this->response['first_name'] || null;
+    }
+
+    public function getLastName(): ?string
+    {
+        return $this->response['last_name'] || null;
+    }
+
     public function toArray(): array
     {
         return $this->response;
