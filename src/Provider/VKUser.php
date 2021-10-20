@@ -25,17 +25,17 @@ class VKUser implements ResourceOwnerInterface
 
     public function getFirstName(): ?string
     {
-        return $this->response['first_name'] || null;
+        return $this->response['first_name'];
     }
 
     public function getLastName(): ?string
     {
-        return $this->response['last_name'] || null;
+        return $this->response['last_name'];
     }
 
     public function getNickname(): ?string
     {
-        return $this->response['nickname'] || null;
+        return $this->response['nickname'];
     }
 
     public function toArray(): array
